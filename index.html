@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق OCR العربي (محلي)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>تطبيق التعرف الضوئي على الحروف (OCR) العربي</h2>
+    <form id="ocrForm" enctype="multipart/form-data">
+      <input type="file" id="imageInput" name="image" accept="image/*" required>
+      <button type="submit" id="ocrBtn">ابدأ التحويل</button>
+    </form>
+    <div class="results">
+      <label for="ocrText">النص المستخرج (خام):</label>
+      <textarea id="ocrText" readonly></textarea>
+
+      <label for="llmText">النص بعد التصحيح بواسطة الذكاء الاصطناعي:</label>
+      <textarea id="llmText" readonly></textarea>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
