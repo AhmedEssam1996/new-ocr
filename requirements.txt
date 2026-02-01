@@ -1,0 +1,12 @@
+flask==3.0.0
+paddleocr==2.7.3
+opencv-python==4.6.0.66
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+requests==2.31.0
+werkzeug==3.0.1
+# QARI v0.3 - Install if available: pip install qari or qari-ocr
+transformers==4.35.0
+torch==2.1.0
+pillow==10.1.0
+
